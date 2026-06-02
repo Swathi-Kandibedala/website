@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swathi Kandibedala | Azure Data Engineer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Swathi Kandibedala, an experienced Azure Data Engineer specializing in building scalable ETL/ELT pipelines, PySpark Delta Lake architectures, and Synapse Data Warehousing.">
+    <meta name="keywords" content="Azure Data Engineer, Databricks, PySpark, Azure Data Factory, Delta Lake, Synapse Analytics, Data Warehouse, Big Data, SQL, ETL, CDC">
+    <meta name="author" content="Swathi Kandibedala">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind-like Grid Utility or Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-theme">
+    
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Background Decorative Gradients -->
+    <div class="blob-wrapper">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="header" class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">Swathi</span>.K
+            </a>
+            
+            <nav class="nav-links" id="nav-menu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link contact-btn-nav">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle visual theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="menu-open"></i>
+                    <i data-lucide="x" class="menu-close hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="intro-badge">
+                        <span class="pulse-dot"></span>
+                        Available for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Swathi Kandibedala
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        Azure Data Engineer with 3 years of experience designing and operationalizing cloud-native data platforms on Microsoft Azure. I specialize in scaling ETL/ELT pipelines, Delta Lake architectures, and modeling warehouse solutions.
+                    </p>
+                    
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Anantapur, India (Open to Relocate)</span>
+                        </div>
+                        <div class="meta-item">
+                            <i data-lucide="mail"></i>
+                            <span>swathi.k170701@gmail.com</span>
+                        </div>
+                        <div class="meta-item">
+                            <i data-lucide="phone"></i>
+                            <span>+91 7386824898</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i data-lucide="send"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="image-frame-glow">
+                        <div class="image-wrapper">
+                            <!-- User's local profile image -->
+                            <img src="image.png" alt="Swathi Kandibedala" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'">
+                        </div>
+                        <div class="tech-tag floating-tag-1">
+                            <i data-lucide="database"></i>
+                            <span>ADF</span>
+                        </div>
+                        <div class="tech-tag floating-tag-2">
+                            <i data-lucide="zap"></i>
+                            <span>Spark</span>
+                        </div>
+                        <div class="tech-tag floating-tag-3">
+                            <i data-lucide="shield"></i>
+                            <span>Key Vault</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="trending-down"></i>
+                    </div>
+                    <div class="stat-number" data-target="40">0</div>
+                    <div class="stat-label">% Pipeline Runtime Reduced</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <div class="stat-number" data-target="70">0</div>
+                    <div class="stat-label">% Manual Reporting Cut</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="check-circle2"></i>
+                    </div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Validation Accuracy</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Professional Summary -->
+        <section id="about" class="about-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Introduction</span>
+                    <h2 class="section-title">Professional Summary</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info card-glass">
+                        <p class="summary-paragraph">
+                            I am a results-oriented <strong>Azure Data Engineer</strong> with a proven history of designing and operationalizing high-performance cloud data platforms. Skilled in building scalable end-to-end ETL/ELT pipelines, designing robust lakehouse systems following the <strong>Medallion Architecture</strong>, and building enterprise data warehouses in <strong>Azure Synapse Analytics</strong>.
+                        </p>
+                        <p class="summary-paragraph">
+                            My core expertise lies in transforming raw, unstructured, or streaming datasets into highly optimized, analytical structures. I leverage <strong>PySpark</strong> and <strong>Databricks</strong> to build flexible and configuration-driven pipelines, securing environments with <strong>Azure Key Vault</strong> and automating deployments using <strong>Azure DevOps CI/CD</strong>.
+                        </p>
+                        <div class="highlights-grid">
+                            <div class="highlight-item">
+                                <i data-lucide="check-square"></i>
+                                <span>Medallion Delta Lake architecture execution</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-square"></i>
+                                <span>Metadata-driven incremental loads</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-square"></i>
+                                <span>Data validation and governance automation</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-square"></i>
+                                <span>Performance tuning & cost optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interests-panel card-glass">
+                        <h3>Core Engineering Values</h3>
+                        <div class="value-cards">
+                            <div class="value-card">
+                                <div class="value-icon"><i data-lucide="shield-check"></i></div>
+                                <h4>Data Quality & Governance</h4>
+                                <p>Ensuring 100% reliability of operational data with automated testing frameworks.</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon"><i data-lucide="cpu"></i></div>
+                                <h4>Efficiency & Performance</h4>
+                                <p>Tuning partitioning, Spark caching, and Z-Ordering to slash runtime and costs.</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon"><i data-lucide="refresh-cw"></i></div>
+                                <h4>Metadata-Driven Automation</h4>
+                                <p>Standardizing pipelines to easily onboard new tables without custom code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">What I Do</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Cloud & Azure -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <i data-lucide="cloud"></i>
+                            <h3>Cloud & Azure Services</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Azure Data Factory (ADF)</span><span>95%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Azure Databricks</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Azure Synapse Analytics</span><span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>ADLS Gen2 & Blob Storage</span><span>95%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Key Vault & SQL Database</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Event Hubs & Logic Apps</span><span>80%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Big Data & Analytics -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <i data-lucide="cpu"></i>
+                            <h3>Big Data & Processing</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Apache Spark & PySpark</span><span>92%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Spark SQL</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Delta Lake (Lakehouse)</span><span>95%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Databricks Workflows</span><span>88%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Hive & Spark Streaming</span><span>80%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Warehousing & Languages -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <i data-lucide="database"></i>
+                            <h3>Data Warehousing & Code</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Dimensional Modeling (Star/Snowflake)</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Slowly Changing Dimensions (SCD 1/2)</span><span>95%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>SQL / T-SQL (Advanced)</span><span>92%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Python (Pandas, NumPy, Scripting)</span><span>88%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Scala & Java (Fundamentals)</span><span>65%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="65%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practices & DevOps -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <i data-lucide="git-branch"></i>
+                            <h3>DevOps, Analytics & Practices</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>CI/CD & Azure DevOps</span><span>88%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Git Version Control</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Power BI & Data Visualization</span><span>80%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Performance Tuning & Optimization</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Data Validation & Governance</span><span>92%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 0%" data-progress="92%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="experience-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">My Journey</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- CGI Role -->
+                    <div class="timeline-item left animate-scroll">
+                        <div class="timeline-badge">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="timeline-content card-glass">
+                            <span class="time-duration">Jul 2023 – Present</span>
+                            <h3>Data Engineer</h3>
+                            <h4 class="company-name">CGI <span class="loc">&bull; Bangalore, India</span></h4>
+                            <p class="timeline-proj"><strong>Project: Trade360 – Banking Data Platform</strong></p>
+                            <ul class="experience-bullets">
+                                <li>Ingested critical banking and trade data from on-prem SQL, REST APIs, and flat files into ADLS Gen2 using parameterized <strong>Azure Data Factory</strong> pipelines at scale.</li>
+                                <li>Engineered PySpark notebooks in <strong>Azure Databricks</strong> implementing a 3-tier <strong>Delta Lake Medallion Architecture</strong>, ensuring high reusability and fast data reprocessing.</li>
+                                <li>Loaded curated dimensional datasets into <strong>Azure Synapse Analytics</strong> using Star Schema with <strong>SCD Type 2</strong> dimensions, powering crucial management reporting dashboards.</li>
+                                <li>Improved runtime performance by <strong>~40%</strong> and decreased computing overheads by tuning Spark configurations, partitioning, caching, and implementing broadcast joins.</li>
+                                <li>Developed custom python-based data validation and auditing scripts that cut manual checking efforts by <strong>~70%</strong> and secured critical metric reporting.</li>
+                                <li>Secured credentials using <strong>Key Vault</strong>, versioned all assets with Git, and managed environment releases using <strong>Azure DevOps CI/CD</strong> in an Agile Scrum ecosystem.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- IBM Internship -->
+                    <div class="timeline-item right animate-scroll">
+                        <div class="timeline-badge">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content card-glass">
+                            <span class="time-duration">Sep 2022 – Nov 2022</span>
+                            <h3>Data / AI Engineering Intern</h3>
+                            <h4 class="company-name">IBM SkillsBuild Program <span class="loc">&bull; Remote</span></h4>
+                            <ul class="experience-bullets">
+                                <li>Built data preprocessing pipelines in Python (utilizing Pandas, NumPy, and OpenCV) to clean, transform, and prepare large datasets.</li>
+                                <li>Collaborated in feature engineering logic, specifically implementation of ratios (Eye/Mouth Aspect Ratios) for AI model input features.</li>
+                                <li>Assisted in training runs and quantitative evaluation of models, working in a fast-paced Agile methodology.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Portfolio Section -->
+        <section id="projects" class="projects-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Portfolio Showcase</span>
+                    <h2 class="section-title">Key Projects</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="lakehouse">Lakehouse & ETL</button>
+                    <button class="filter-btn" data-filter="streaming">Real-time Streaming</button>
+                    <button class="filter-btn" data-filter="frameworks">Frameworks & CDC</button>
+                    <button class="filter-btn" data-filter="migration">Migrations</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card card-glass" data-category="lakehouse">
+                        <div class="project-header">
+                            <div class="project-icon-box">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <span class="project-tag">Lakehouse & ETL</span>
+                        </div>
+                        <h3>End-to-End Azure Data Lakehouse & Analytics</h3>
+                        <p class="project-brief">Designed a medallion lakehouse architecture on ADLS Gen2 and Synapse to structure retail sales transactional data.</p>
+                        
+                        <div class="project-details">
+                            <ul class="project-bullets">
+                                <li>Ingested source systems (APIs, SQL, CSVs) via dynamic parameters in ADF pipelines.</li>
+                                <li>Engineered PySpark notebooks to cleanse, deduplicate, and load raw records into ACID-compliant Delta tables.</li>
+                                <li>Optimized queries via data partitioning, Delta OPTIMIZE, Z-ORDER, and incremental query execution.</li>
+                                <li>Built rich star-schema tables in Synapse to power interactive, self-service Power BI dashboard metrics.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-tags">
+                            <span class="badge">ADF</span>
+                            <span class="badge">Databricks</span>
+                            <span class="badge">Synapse</span>
+                            <span class="badge">Delta Lake</span>
+                            <span class="badge">Power BI</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card card-glass" data-category="streaming">
+                        <div class="project-header">
+                            <div class="project-icon-box">
+                                <i data-lucide="activity"></i>
+                            </div>
+                            <span class="project-tag">Real-time Streaming</span>
+                        </div>
+                        <h3>Real-Time Streaming Analytics Pipeline</h3>
+                        <p class="project-brief">Architected a near-real-time streaming system ingesting clickstream events into Databricks.</p>
+                        
+                        <div class="project-details">
+                            <ul class="project-bullets">
+                                <li>Ingested high-throughput JSON click events via Azure Event Hubs.</li>
+                                <li>Developed PySpark Structured Streaming notebooks with check-pointing to guarantee exactly-once deliveries.</li>
+                                <li>Applied watermarking constraints to allow late-arriving stream events and computed windowed metrics.</li>
+                                <li>Implemented schema validation and dead-letter routing to prevent stream interruption from bad formats.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-tags">
+                            <span class="badge">Event Hubs</span>
+                            <span class="badge">PySpark Streaming</span>
+                            <span class="badge">Delta Lake</span>
+                            <span class="badge">Azure Monitor</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card card-glass" data-category="frameworks">
+                        <div class="project-header">
+                            <div class="project-icon-box">
+                                <i data-lucide="git-merge"></i>
+                            </div>
+                            <span class="project-tag">Frameworks & CDC</span>
+                        </div>
+                        <h3>Metadata-Driven Incremental Loading Framework</h3>
+                        <p class="project-brief">Built a configuration-driven framework in ADF to dynamically ingest hundreds of operational databases.</p>
+                        
+                        <div class="project-details">
+                            <ul class="project-bullets">
+                                <li>Engineered control database models in Azure SQL to store mapping parameters, schedule flags, and sync watermarks.</li>
+                                <li>Eliminated custom development loops for new databases; ingestion configuration takes hours instead of days.</li>
+                                <li>Designed high-watermark Delta checking configurations to fetch changed and new rows incrementally.</li>
+                                <li>Secured connection strings with Azure Key Vault secrets and structured detailed audit logs.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-tags">
+                            <span class="badge">ADF</span>
+                            <span class="badge">Azure SQL</span>
+                            <span class="badge">ADLS Gen2</span>
+                            <span class="badge">Key Vault</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card card-glass" data-category="migration">
+                        <div class="project-header">
+                            <div class="project-icon-box">
+                                <i data-lucide="refresh-cw"></i>
+                            </div>
+                            <span class="project-tag">Migrations</span>
+                        </div>
+                        <h3>Legacy Data Warehouse Migration to Azure</h3>
+                        <p class="project-brief">Planned and performed the migration of on-premise SQL Server DW infrastructures to Azure Synapse.</p>
+                        
+                        <div class="project-details">
+                            <ul class="project-bullets">
+                                <li>Created schema mapping specifications, mapped stored procedures to PySpark, and planned cutover phases.</li>
+                                <li>Built ADF migration pipelines executing bulk exports and incremental CDC synchronization checks.</li>
+                                <li>Performed source-to-target data reconciliation with automated PySpark notebooks, ensuring zero data loss.</li>
+                                <li>Tuned performance of Synapse target models by implementing distribution keys, partitions, and clustered columnstore indexes.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-tags">
+                            <span class="badge">SQL Server</span>
+                            <span class="badge">ADF</span>
+                            <span class="badge">Databricks</span>
+                            <span class="badge">Synapse</span>
+                            <span class="badge">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education Section -->
+        <section id="education" class="education-section scroll-spy-section">
+            <div class="container education-grid">
+                
+                <!-- Certifications -->
+                <div class="certs-container">
+                    <div class="section-header">
+                        <span class="subtitle">Credentials</span>
+                        <h2 class="section-title">Certifications</h2>
+                        <div class="header-line"></div>
+                    </div>
+                    
+                    <div class="certs-list">
+                        <div class="cert-card card-glass">
+                            <div class="cert-icon-wrapper">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Microsoft Certified: Azure Data Engineer Associate</h4>
+                                <p class="cert-id">Certification Code: DP-203</p>
+                                <span class="badge-cert">Verified Credential</span>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-card card-glass">
+                            <div class="cert-icon-wrapper">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Microsoft Certified: Azure Fundamentals</h4>
+                                <p class="cert-id">Certification Code: AZ-900</p>
+                                <span class="badge-cert">Verified Credential</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publications-section card-glass">
+                        <div class="pub-header">
+                            <i data-lucide="book-open"></i>
+                            <h3>Publications</h3>
+                        </div>
+                        <div class="pub-content">
+                            <h4>Research Paper Presentation</h4>
+                            <p class="pub-conference">ICAIRME 2022 — Bangalore, India</p>
+                            <p class="pub-details">International Conference on Artificial Intelligence, Robotics & Mechanical Engineering.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Languages -->
+                <div class="edu-container">
+                    <div class="section-header">
+                        <span class="subtitle">Qualifications</span>
+                        <h2 class="section-title">Education</h2>
+                        <div class="header-line"></div>
+                    </div>
+                    
+                    <div class="edu-card card-glass">
+                        <div class="edu-header">
+                            <div class="school-icon">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div class="school-title">
+                                <h3>Sanskrithi School of Engineering</h3>
+                                <p>B.Tech, Computer Science and Engineering</p>
+                            </div>
+                        </div>
+                        <div class="edu-details">
+                            <span class="edu-year">2019 – 2023</span>
+                            <span class="edu-grade">Score: <strong>79%</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="languages-panel card-glass">
+                        <h3>Languages</h3>
+                        <div class="lang-grid">
+                            <div class="lang-item">
+                                <div class="lang-header">
+                                    <span>Telugu</span>
+                                    <span class="lang-level">Native</span>
+                                </div>
+                                <div class="lang-bar"><div class="lang-progress" style="width: 100%"></div></div>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-header">
+                                    <span>English</span>
+                                    <span class="lang-level">Professional</span>
+                                </div>
+                                <div class="lang-bar"><div class="lang-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-header">
+                                    <span>Hindi</span>
+                                    <span class="lang-level">Elementary</span>
+                                </div>
+                                <div class="lang-bar"><div class="lang-progress" style="width: 45%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Panel -->
+                    <div class="contact-info-panel card-glass">
+                        <h3>Let's Collaborate</h3>
+                        <p>Have an exciting opportunity, project collaboration, or want to discuss pipelines, lakehouses, or cloud analytics? Drop a message!</p>
+                        
+                        <div class="contact-info-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                                <div class="detail-text">
+                                    <span>Email</span>
+                                    <a href="mailto:swathi.k170701@gmail.com">swathi.k170701@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                                <div class="detail-text">
+                                    <span>Phone</span>
+                                    <a href="tel:+917386824898">+91 7386824898</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="detail-text">
+                                    <span>Location</span>
+                                    <p>Anantapur, Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-title">Find me on professional networks</div>
+                        <div class="social-row">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Swathi-Kandibedala" target="_blank" rel="noopener noreferrer" class="social-circle-btn">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Panel -->
+                    <div class="contact-form-panel card-glass">
+                        <form id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <input type="text" id="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                    <span class="error-msg">Please enter your name</span>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="email" required placeholder=" ">
+                                    <label for="email">Your Email</label>
+                                    <span class="error-msg">Please enter a valid email address</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <select id="subject" required>
+                                    <option value="" disabled selected hidden>Select Request Type</option>
+                                    <option value="job">Job Opportunity / Recruitment</option>
+                                    <option value="freelance">Project Collaboration</option>
+                                    <option value="general">Networking / Greeting</option>
+                                </select>
+                                <span class="error-msg">Please select an option</span>
+                            </div>
+
+                            <div class="input-group">
+                                <textarea id="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Message Details</label>
+                                <span class="error-msg">Please enter your message details</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="submit-text">Send Message</span>
+                                <i data-lucide="send" class="submit-icon"></i>
+                                <span class="loading-spinner hidden"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="logo"><span class="logo-accent">Swathi</span>.K</a>
+                <p>Azure Data Engineer specialized in Medallion Architecture and Scalable Big Data Pipelines.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Swathi Kandibedala. All rights reserved.</p>
+                <p class="heart-text">Built with <i data-lucide="heart" class="heart-icon"></i> and Passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Feedback Modal -->
+    <div id="success-modal" class="modal-overlay hidden">
+        <div class="modal-card card-glass">
+            <div class="modal-icon">
+                <i data-lucide="check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your message has been successfully simulated. Swathi will get back to you shortly.</p>
+            <button id="close-modal" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
